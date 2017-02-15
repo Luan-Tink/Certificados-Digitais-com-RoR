@@ -1,0 +1,15 @@
+<h1>Criar Certificado</h1>
+
+
+<%= form_tag('/certificate/create/', method: :get) do %>
+  <%= text_field_tag :nome, nil, placeholder: :Nome %>
+  <br>
+  <br>
+  <%= text_field_tag :cpf, nil, placeholder: :CPF %>
+  <br>
+  <br>
+  <%= email_field_tag :email, nil, placeholder: "E-Mail" %>
+  <br>
+  <br>
+  <%= button_tag :Enviar %>
+<% end %>

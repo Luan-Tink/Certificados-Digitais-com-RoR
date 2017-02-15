@@ -1,0 +1,15 @@
+<h1>Verificar Documento Assinado</h1>
+
+<%= form_tag('/certificate/verify/', method: :post, :enctype =>"multipart/form-data") do %>
+  <%= text_area_tag :cert, nil, placeholder: :Certificado %>
+  <br>
+  <br>
+  <label for="signature">Documento Assinado: </label> <br>
+  <%= file_field_tag :signature %>
+  <br>
+  <br>   
+  <%= text_area_tag :documento, nil, placeholder: :Documento %>
+  <br>
+  <br>
+  <%= button_tag :Enviar %>
+<% end %>

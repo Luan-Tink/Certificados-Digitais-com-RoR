@@ -1,0 +1,11 @@
+<h1>Verificar Certificado</h1>
+
+<%= form_tag('/certificate/auth/', method: :post) do %>
+  <%= text_area_tag :cert, nil, placeholder: :Certificado %>
+  <br>
+  <br>  
+  <%= text_area_tag :key, nil, placeholder: "Chave Privada" %>
+  <br>
+  <br>
+  <%= button_tag :Enviar %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Assinar documento</h1>
+
+<%= form_tag('/certificate/sign/', method: :post) do %>
+  <%= text_area_tag :key, nil, placeholder: :Chave %>
+  <br>
+  <br>
+  <%= text_area_tag :documento, nil, placeholder: :Documento %>
+  <br>
+  <br>
+  <%= button_tag :Enviar %>
+<% end %>
